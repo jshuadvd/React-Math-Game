@@ -1,2 +1,4 @@
-// Code goes here
-
+React.render(
+    <h1>Hello!</h1>,
+    document.getElementById('container')
+  );
