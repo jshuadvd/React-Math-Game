@@ -2,13 +2,13 @@ var Game = React.createClass({
 render: function() {
   return (
     <div id="game">
-
-    </div>    
+      <h2>Play Nine</h2>
+    </div>
   );
 }
 });
 
 React.render(
-    <h1>Hello!</h1>,
+    <Game />,
     document.getElementById('container')
   );
