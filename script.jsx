@@ -1,3 +1,13 @@
+var StarsFrame = React.createClass({
+render: function() {
+  return (
+    <div id="game">
+
+    </div>
+  );
+}
+});
+
 var Game = React.createClass({
 render: function() {
   return (
@@ -7,6 +17,7 @@ render: function() {
   );
 }
 });
+
 
 React.render(
     <Game />,
