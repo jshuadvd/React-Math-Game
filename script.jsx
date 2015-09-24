@@ -2,8 +2,8 @@ var StarsFrame = React.createClass({
 render: function() {
   return (
     <div id="stars-frame">
-      <div class="well">
-        
+      <div className="well">
+        <span class="glyphicon glyphicon-star"></span>
       </div>
     </div>
   );
