@@ -1,8 +1,10 @@
 var StarsFrame = React.createClass({
 render: function() {
   return (
-    <div id="">
-      ...
+    <div id="stars-frame">
+      <div class="well">
+        
+      </div>
     </div>
   );
 }
