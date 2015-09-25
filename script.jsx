@@ -3,19 +3,19 @@ render: function() {
   return (
     <div id="stars-frame">
       <div className="well">
-        <span class="glyphicon glyphicon-star"></span>
-        <span class="glyphicon glyphicon-star"></span>
-        <span class="glyphicon glyphicon-star"></span>
-        <span class="glyphicon glyphicon-star"></span>
-        <span class="glyphicon glyphicon-star"></span>
-        <span class="glyphicon glyphicon-star"></span>
-        <span class="glyphicon glyphicon-star"></span>
-        <span class="glyphicon glyphicon-star"></span>
-        <span class="glyphicon glyphicon-star"></span>
+        <span className="glyphicon glyphicon-star"></span>
+        <span className="glyphicon glyphicon-star"></span>
+        <span className="glyphicon glyphicon-star"></span>
+        <span className="glyphicon glyphicon-star"></span>
+        <span className="glyphicon glyphicon-star"></span>
+        <span className="glyphicon glyphicon-star"></span>
+        <span className="glyphicon glyphicon-star"></span>
+        <span className="glyphicon glyphicon-star"></span>
+        <span className="glyphicon glyphicon-star"></span>
       </div>
     </div>
   );
-}
+ }
 });
 
 var ButtonFrame = React.createClass({
@@ -25,7 +25,7 @@ render: function() {
       ...
     </div>
   );
-}
+ }
 });
 
 var AnswerFrame = React.createClass({
