@@ -22,7 +22,7 @@ var ButtonFrame = React.createClass({
 render: function() {
   return (
     <div id="button-frame">
-      <button className="btn btn-primary">=</button>
+      <button className="btn btn-primary btn-lg">=</button>
     </div>
   );
  }
