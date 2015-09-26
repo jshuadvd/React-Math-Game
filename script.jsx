@@ -31,8 +31,8 @@ render: function() {
 var AnswerFrame = React.createClass({
 render: function() {
   return (
-    <div id="">
-      ...
+    <div id="answer-frame">
+      <div className="well"></div>
     </div>
   );
 }
