@@ -21,8 +21,8 @@ render: function() {
 var ButtonFrame = React.createClass({
 render: function() {
   return (
-    <div id="">
-      ...
+    <div id="button-frame">
+      <button class="btn primary-button">=</button>
     </div>
   );
  }
