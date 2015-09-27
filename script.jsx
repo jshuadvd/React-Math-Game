@@ -1,16 +1,10 @@
 var StarsFrame = React.createClass({
 render: function() {
+  var numberOfStars = 5;
+
   return (
     <div id="stars-frame">
       <div className="well">
-        <span className="glyphicon glyphicon-star"></span>
-        <span className="glyphicon glyphicon-star"></span>
-        <span className="glyphicon glyphicon-star"></span>
-        <span className="glyphicon glyphicon-star"></span>
-        <span className="glyphicon glyphicon-star"></span>
-        <span className="glyphicon glyphicon-star"></span>
-        <span className="glyphicon glyphicon-star"></span>
-        <span className="glyphicon glyphicon-star"></span>
         <span className="glyphicon glyphicon-star"></span>
       </div>
     </div>
