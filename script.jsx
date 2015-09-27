@@ -44,9 +44,11 @@ render: function() {
     <div id="game">
       <h2>Play Nine</h2>
       <hr />
-      <StarsFrame />
-      <ButtonFrame />
-      <AnswerFrame />
+      <div className="clearfix">
+        <StarsFrame />
+        <ButtonFrame />
+        <AnswerFrame />
+      </div>
 
     </div>
   );
