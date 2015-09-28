@@ -1,6 +1,6 @@
 var StarsFrame = React.createClass({
 render: function() {
-  var numberOfStars = Math.random() * 9;
+  var numberOfStars = Math.floor(Math.random() * 9);
 
   var stars = [];
   for (var i = 0; i < numberOfStars; i++) {
