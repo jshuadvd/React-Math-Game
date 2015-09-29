@@ -43,13 +43,13 @@ var NumbersFrame = React.createClass({
     var numbers = [];
     for (var i = 0; i <= 9; i++) {
       numbers.push(
-        <div className="number">9</div>
+        <div className="number">{i}</div>
       );
+    }
     return (
       <div id="numbers-frame">
         <div className="well">
-          <div className="number">{i}</div>
-
+          {numbers}
         </div>
       </div>
     );
