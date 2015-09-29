@@ -39,12 +39,17 @@ var AnswerFrame = React.createClass({
 
 var NumbersFrame = React.createClass({
   render: function() {
+
+    var numbers = [];
+    for (var i = 0; i <= 9; i++) {
+      numbers.push(
+        <div className="number">9</div>
+      );
     return (
       <div id="numbers-frame">
         <div className="well">
           <div className="number">4</div>
-          <div className="number">9</div>
-          <div className="number">6</div>
+
         </div>
       </div>
     );
