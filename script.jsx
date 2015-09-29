@@ -48,7 +48,7 @@ var NumbersFrame = React.createClass({
     return (
       <div id="numbers-frame">
         <div className="well">
-          <div className="number">4</div>
+          <div className="number">{i}</div>
 
         </div>
       </div>
