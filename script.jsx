@@ -61,7 +61,7 @@ var NumbersFrame = React.createClass({
 
 var Game = React.createClass({
   getInitialState: function() {
-    return {selectedNumbers: [3, 6]};
+    return {selectedNumbers: []};
   },
   render: function() {
     return (
