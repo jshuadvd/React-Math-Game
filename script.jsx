@@ -73,7 +73,7 @@ var Game = React.createClass({
           <AnswerFrame selectedNumbers={this.state.selectedNumbers}/>
         </div>
 
-        <NumbersFrame/>
+        <NumbersFrame selectedNumbers={this.state.selectedNumbers}/>
 
       </div>
     );
