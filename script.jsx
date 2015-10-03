@@ -63,6 +63,7 @@ var Game = React.createClass({
   getInitialState: function() {
     return {selectedNumbers: []};
   },
+  clickNumber: function() {},
   render: function() {
     return (
       <div id="game">
