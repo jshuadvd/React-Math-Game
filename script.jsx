@@ -64,7 +64,9 @@ var Game = React.createClass({
     return {selectedNumbers: []};
   },
   clickNumber: function() {
+    this.setState({
 
+    });
   },
   render: function(clickedNumber) {
     return (
