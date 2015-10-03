@@ -63,8 +63,10 @@ var Game = React.createClass({
   getInitialState: function() {
     return {selectedNumbers: []};
   },
-  clickNumber: function() {},
-  render: function() {
+  clickNumber: function() {
+
+  },
+  render: function(clickedNumber) {
     return (
       <div id="game">
         <h2>Play Nine</h2>
@@ -75,7 +77,8 @@ var Game = React.createClass({
           <AnswerFrame selectedNumbers={this.state.selectedNumbers}/>
         </div>
 
-        <NumbersFrame selectedNumbers={this.state.selectedNumbers}/>
+        <NumbersFrame selectedNumbers={this.state.selectedNumbers}
+          clickNumber={this.clickNumber} />
 
       </div>
     );
