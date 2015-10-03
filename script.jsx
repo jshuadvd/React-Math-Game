@@ -44,7 +44,7 @@ var NumbersFrame = React.createClass({
 
     var numbers = [], className, selectedNumbers = this.props.selectedNumbers;
     for (var i = 0; i <= 9; i++) {
-      className = "numbers selected + ()"
+      className = "numbers selected " + (selectedNumbers.indexOf(i)>=0);
       numbers.push(
         <div className="number">{i}</div>
       );
