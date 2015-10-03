@@ -42,7 +42,7 @@ var AnswerFrame = React.createClass({
 var NumbersFrame = React.createClass({
   render: function() {
 
-    var numbers = [], className;
+    var numbers = [], className, selectedNumbers = this.props.selectedNumbers;
     for (var i = 0; i <= 9; i++) {
       className = "numbers selected + ()"
       numbers.push(
