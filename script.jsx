@@ -42,8 +42,9 @@ var AnswerFrame = React.createClass({
 var NumbersFrame = React.createClass({
   render: function() {
 
-    var numbers = [];
+    var numbers = [], className;
     for (var i = 0; i <= 9; i++) {
+      className = "numbers selected + ()"
       numbers.push(
         <div className="number">{i}</div>
       );
