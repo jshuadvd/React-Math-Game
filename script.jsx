@@ -44,11 +44,11 @@ var NumbersFrame = React.createClass({
 
     var numbers = [], className,
     clickNumber.this.props.clickNumber,
-    electedNumbers = this.props.selectedNumbers;
+    selectedNumbers = this.props.selectedNumbers;
     for (var i = 0; i <= 9; i++) {
       className = "numbers selected " + (selectedNumbers.indexOf(i)>=0);
       numbers.push(
-        <div className="{className}" onClick={clickNumber}>
+        <div className="{className}" onClick={clickNumber.bind(null, i)}>
           {i}</div>
       );
     }
