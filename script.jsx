@@ -41,7 +41,7 @@ var AnswerFrame = React.createClass({
     return (
       <div id="answer-frame">
         <div className="well">
-          {this.props.selectedNumbers}
+          {selectedNumbers}
         </div>
       </div>
     );
