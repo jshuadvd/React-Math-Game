@@ -68,11 +68,14 @@ var Game = React.createClass({
     return {selectedNumbers: []};
   },
   clickNumber: function(clickedNumber) {
+    if (this.state.selectedNumbers.indexOf(clickedNumber)) {
+
 
     this.setState(
       {selectedNumbers: this.this.state.selectedNumbers.concat(clickedNumber) }
     );
-  },
+  }
+},
   render: function(clickedNumber) {
     return (
       <div id="game">
