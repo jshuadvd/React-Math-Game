@@ -49,7 +49,8 @@ var NumbersFrame = React.createClass({
       className = "numbers selected " + (selectedNumbers.indexOf(i)>=0);
       numbers.push(
         <div className="{className}" onClick={clickNumber.bind(null, i)}>
-          {i}</div>
+          {i}
+        </div>
       );
     }
     return (
@@ -66,7 +67,8 @@ var Game = React.createClass({
   getInitialState: function() {
     return {selectedNumbers: []};
   },
-  clickNumber: function() {
+  clickNumber: function(clickedNumber) {
+
     this.setState(
       {selectedNumbers: this.this.state.selectedNumbers.concat(clickedNumber) }
     );
