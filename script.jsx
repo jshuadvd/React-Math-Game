@@ -83,7 +83,7 @@ var Game = React.createClass({
         <h2>Play Nine</h2>
         <hr/>
         <div className="clearfix">
-          <StarsFrame/>
+          <StarsFrame numberOfStars/>
           <ButtonFrame/>
           <AnswerFrame selectedNumbers={this.state.selectedNumbers}/>
         </div>
