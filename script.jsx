@@ -32,7 +32,7 @@ var AnswerFrame = React.createClass({
     var props = this.props;
     var selectedNumbers = props.selectedNumbers.map(function(i) {
       return (
-        <span>
+        <span onClick={props.unselectNumber.bind(null, i)}>
           {i}
         </span>
       )
