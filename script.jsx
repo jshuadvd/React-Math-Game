@@ -69,7 +69,7 @@ var Game = React.createClass({
               selectedNumbers: []};
   },
   selectedNumber: function(selectededNumber) {
-    if (this.state.selectedNumbers.indexOf(selectededNumber) < 0) {
+    if (this.state.selectedNumbers.indexOf(clickedNumber) < 0) {
     this.setState(
       {selectedNumbers: this.state.selectedNumbers.concat(clickedNumber) }
     );
