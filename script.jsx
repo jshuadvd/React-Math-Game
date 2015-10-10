@@ -1,9 +1,9 @@
 var StarsFrame = React.createClass({
   render: function() {
-    var numberOfStars = Math.floor(Math.random() * 9) + 1;
+    //var numberOfStars = Math.floor(Math.random() * 9) + 1;
 
     var stars = [];
-    for (var i = 0; i < numberOfStars; i++) {
+    for (var i = 0; i < this.props.numberOfStars; i++) {
       stars.push(<span className="glyphicon glyphicon-star"></span>);
     }
 
@@ -89,7 +89,7 @@ var Game = React.createClass({
         </div>
 
         <NumbersFrame selectedNumbers={this.state.selectedNumbers}
-          clickNumber={this.clickNumber} />
+                      clickNumber={this.clickNumber} />
 
       </div>
     );
