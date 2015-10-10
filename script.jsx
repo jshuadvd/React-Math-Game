@@ -65,7 +65,8 @@ var NumbersFrame = React.createClass({
 
 var Game = React.createClass({
   getInitialState: function() {
-    return {selectedNumbers: []};
+    return {  numberOfStars: Math.floor(Math.random() * 9) + 1,
+              selectedNumbers: []};
   },
   clickNumber: function(clickedNumber) {
     if (this.state.selectedNumbers.indexOf(clickedNumber) < 0) {
@@ -82,7 +83,7 @@ var Game = React.createClass({
         <h2>Play Nine</h2>
         <hr/>
         <div className="clearfix">
-          <StarsFrame numberOfStars/>
+          <StarsFrame numberOfStars={this.state.numberOfStars}/>
           <ButtonFrame/>
           <AnswerFrame selectedNumbers={this.state.selectedNumbers}/>
         </div>
