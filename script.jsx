@@ -75,6 +75,9 @@ var Game = React.createClass({
     );
   }
 },
+unselectNumber: function() {
+
+},
   render: function(selectededNumber) {
     return (
       <div id="game">
