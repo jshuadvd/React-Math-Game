@@ -76,7 +76,7 @@ var Game = React.createClass({
   }
 },
 unselectNumber: function() {
-
+  var selectedNumbers = this.state.selectedNumbers,
 },
   render: function(selectededNumber) {
     return (
