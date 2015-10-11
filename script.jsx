@@ -78,6 +78,7 @@ var Game = React.createClass({
 unselectNumber: function(clickedNumber) {
   var selectedNumbers = this.state.selectedNumbers,
   indexOfNumber = selectededNumbers.indexOf(clickedNumber);
+  selectededNumbers.splice(indexOfNumber, 1);
 },
   render: function(selectededNumber) {
     return (
