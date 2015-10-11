@@ -77,6 +77,7 @@ var Game = React.createClass({
 },
 unselectNumber: function(clickedNumber) {
   var selectedNumbers = this.state.selectedNumbers,
+  indexOfNumber = selectededNumbers.indexOf(clickedNumber);
 },
   render: function(selectededNumber) {
     return (
