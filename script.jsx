@@ -90,7 +90,8 @@ unselectNumber: function(clickedNumber) {
         <div className="clearfix">
           <StarsFrame numberOfStars={this.state.numberOfStars}/>
           <ButtonFrame/>
-          <AnswerFrame selectedNumbers={this.state.selectedNumbers}/>
+          <AnswerFrame selectedNumbers={this.state.selectedNumbers}
+                        unselectNumber={this.unselectNumber}/>
         </div>
 
         <NumbersFrame selectedNumbers={this.state.selectedNumbers}
