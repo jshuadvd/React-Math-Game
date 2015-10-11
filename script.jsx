@@ -29,6 +29,8 @@ var ButtonFrame = React.createClass({
 
 var AnswerFrame = React.createClass({
   render: function() {
+    var props = this.props;
+
     return (
       <div id="answer-frame">
         <div className="well">
