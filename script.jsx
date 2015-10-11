@@ -79,6 +79,8 @@ unselectNumber: function(clickedNumber) {
   var selectedNumbers = this.state.selectedNumbers,
   indexOfNumber = selectededNumbers.indexOf(clickedNumber);
   selectededNumbers.splice(indexOfNumber, 1);
+
+  this.setState({ selectededNumbers: selectededNumbers });
 },
   render: function(selectededNumber) {
     return (
