@@ -92,14 +92,16 @@ unselectNumber: function(clickedNumber) {
   this.setState({ selectededNumbers: selectededNumbers });
 },
   render: function(selectededNumber) {
+    var selectededNumbers = this.state.selectedNumbers,
+        numberOfStars = this.state.numberOfStars;
     return (
       <div id="game">
         <h2>Play Nine</h2>
         <hr/>
         <div className="clearfix">
-          <StarsFrame numberOfStars={this.state.numberOfStars}/>
+          <StarsFrame numberOfStars={numberOfStars}/>
           <ButtonFrame/>
-          <AnswerFrame selectedNumbers={this.state.selectedNumbers}
+          <AnswerFrame selectedNumbers={selectedNumbers}
                         unselectNumber={this.unselectNumber}/>
         </div>
 
