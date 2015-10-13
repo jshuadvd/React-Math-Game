@@ -30,6 +30,13 @@ var ButtonFrame = React.createClass({
 var AnswerFrame = React.createClass({
   render: function() {
     var props = this.props;
+    var selectedNumbers = props.selectedNumbers.map(function(i) {
+      return (
+        <span>
+          {i}
+        </span>
+      )
+    });
 
     return (
       <div id="answer-frame">
