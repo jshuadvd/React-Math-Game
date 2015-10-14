@@ -100,7 +100,7 @@ unselectNumber: function(clickedNumber) {
         <hr/>
         <div className="clearfix">
           <StarsFrame numberOfStars={numberOfStars}/>
-          <ButtonFrame/>
+          <ButtonFrame selectedNumbers={selectedNumbers} />
           <AnswerFrame selectedNumbers={selectedNumbers}
                         unselectNumber={this.unselectNumber}/>
         </div>
