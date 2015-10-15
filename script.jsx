@@ -19,9 +19,14 @@ var StarsFrame = React.createClass({
 
 var ButtonFrame = React.createClass({
   render: function() {
+    var disabled;
     return (
       <div id="button-frame">
-        <button className="btn btn-primary btn-lg">=</button>
+        <button className="btn btn-primary btn-lg">
+
+          =
+
+        </button>
       </div>
     );
   }
