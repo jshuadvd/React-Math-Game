@@ -1,10 +1,10 @@
 var StarsFrame = React.createClass({
   render: function() {
-    //var numberOfStars = Math.floor(Math.random() * 9) + 1;
-
     var stars = [];
     for (var i = 0; i < this.props.numberOfStars; i++) {
-      stars.push(<span className="glyphicon glyphicon-star"></span>);
+      stars.push(
+        <span className="glyphicon glyphicon-star"></span>
+      );
     }
 
     return (
@@ -24,9 +24,7 @@ var ButtonFrame = React.createClass({
     return (
       <div id="button-frame">
         <button className="btn btn-primary btn-lg" disabled={disabled}>
-
           =
-
         </button>
       </div>
     );
