@@ -79,18 +79,19 @@ var NumbersFrame = React.createClass({
 var Game = React.createClass({
   getInitialState: function() {
     return {  numberOfStars: Math.floor(Math.random() * 9) + 1,
-              selectedNumbers: []};
+              selectedNumbers: [] };
   },
-  selectedNumber: function(selectededNumber) {
+  selectedNumber: function(clickedNumber) {
     if (this.state.selectedNumbers.indexOf(clickedNumber) < 0) {
     this.setState(
-      {selectedNumbers: this.state.selectedNumbers.concat(clickedNumber) }
+      { selectedNumbers: this.state.selectedNumbers.concat(clickedNumber) }
     );
   }
 },
 unselectNumber: function(clickedNumber) {
   var selectedNumbers = this.state.selectedNumbers,
   indexOfNumber = selectededNumbers.indexOf(clickedNumber);
+  
   selectededNumbers.splice(indexOfNumber, 1);
 
   this.setState({ selectededNumbers: selectededNumbers });
