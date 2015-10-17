@@ -39,7 +39,7 @@ var AnswerFrame = React.createClass({
         <span onClick={props.unselectNumber.bind(null, i)}>
           {i}
         </span>
-      )
+      );
     });
 
     return (
@@ -56,7 +56,7 @@ var NumbersFrame = React.createClass({
   render: function() {
 
     var numbers = [], className,
-    selectedNumber.this.props.selectedNumber,
+    selectedNumber = this.props.selectedNumber,
     selectedNumbers = this.props.selectedNumbers;
     for (var i = 0; i <= 9; i++) {
       className = "numbers selected " + (selectedNumbers.indexOf(i)>=0);
