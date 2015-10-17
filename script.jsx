@@ -97,7 +97,7 @@ unselectNumber: function(clickedNumber) {
   this.setState({ selectededNumbers: selectededNumbers });
 },
 sumOfSelectedNUmbers, function() {
-
+  return this.state.selectededNumbers.reduce((previous, current) => {}, initial)
 },
 checkAnswer: function() {
   var correct = (this.state.numberOfStars === this.sumOfSelectedNUmbers());
