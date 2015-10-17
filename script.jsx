@@ -96,10 +96,10 @@ unselectNumber: function(clickedNumber) {
 
   this.setState({ selectededNumbers: selectededNumbers });
 },
-sumOfSelectedNUmbers, function() {
+sumOfSelectedNUmbers: function() {
   return this.state.selectededNumbers.reduce(function(p, n) {
 
-  }, 0)
+  }, 0);
 },
 checkAnswer: function() {
   var correct = (this.state.numberOfStars === this.sumOfSelectedNUmbers());
