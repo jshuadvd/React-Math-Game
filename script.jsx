@@ -108,14 +108,16 @@ checkAnswer: function() {
 },
   render: function(selectededNumber) {
     var selectededNumbers = this.state.selectedNumbers,
-        numberOfStars = this.state.numberOfStars;
+        numberOfStars = this.state.numberOfStars,
+        correct = this.state.correct;
     return (
       <div id="game">
         <h2>Play Nine</h2>
         <hr/>
         <div className="clearfix">
           <StarsFrame numberOfStars={numberOfStars}/>
-          <ButtonFrame selectedNumbers={selectedNumbers} />
+          <ButtonFrame selectedNumbers={selectedNumbers}
+                        correct={correct}/>
           <AnswerFrame selectedNumbers={selectedNumbers}
                         unselectNumber={this.unselectNumber}/>
         </div>
