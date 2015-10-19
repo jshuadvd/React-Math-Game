@@ -81,7 +81,7 @@ var Game = React.createClass({
     return {  numberOfStars: Math.floor(Math.random() * 9) + 1,
               selectedNumbers: [] };
   },
-  selectedNumber: function(clickedNumber) {
+  selectNumber: function(clickedNumber) {
     if (this.state.selectedNumbers.indexOf(clickedNumber) < 0) {
     this.setState(
       { selectedNumbers: this.state.selectedNumbers.concat(clickedNumber) }
