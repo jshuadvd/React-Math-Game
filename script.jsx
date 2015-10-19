@@ -79,7 +79,8 @@ var NumbersFrame = React.createClass({
 var Game = React.createClass({
   getInitialState: function() {
     return {  numberOfStars: Math.floor(Math.random() * 9) + 1,
-              selectedNumbers: [] };
+              selectedNumbers: [],
+            correct: null  };
   },
   selectNumber: function(clickedNumber) {
     if (this.state.selectedNumbers.indexOf(clickedNumber) < 0) {
@@ -103,6 +104,7 @@ sumOfSelectedNUmbers: function() {
 },
 checkAnswer: function() {
   var correct = (this.state.numberOfStars === this.sumOfSelectedNUmbers());
+  this.setState({ correct: correct });
 },
   render: function(selectededNumber) {
     var selectededNumbers = this.state.selectedNumbers,
