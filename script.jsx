@@ -99,7 +99,7 @@ unselectNumber: function(clickedNumber) {
 },
 sumOfSelectedNUmbers: function() {
   return this.state.selectededNumbers.reduce(function(p, n) {
-
+    return p + n;
   }, 0);
 },
 checkAnswer: function() {
