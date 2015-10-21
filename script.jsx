@@ -27,6 +27,7 @@ var ButtonFrame = React.createClass({
       case false:
         break;
       default:
+      disabled = (this.props.selectedNumbers.length === 0);
       button = (
         <button className="btn btn-primary btn-lg" disabled={disabled}>
           =
@@ -36,7 +37,7 @@ var ButtonFrame = React.createClass({
 
 
 
-    disabled = (this.props.selectedNumbers.length === 0);
+
     return (
       <div id="button-frame">
 
