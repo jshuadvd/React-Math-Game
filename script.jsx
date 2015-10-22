@@ -24,7 +24,7 @@ var ButtonFrame = React.createClass({
     switch(correct) {
       case true:
       button = (
-        <button className="btn btn-primary btn-lg" disabled={disabled}>
+        <button className="btn btn-success btn-lg">
           =
         </button>
       );
