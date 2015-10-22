@@ -25,7 +25,7 @@ var ButtonFrame = React.createClass({
       case true:
       button = (
         <button className="btn btn-success btn-lg">
-          =
+          <span className="glyphicon glyphicon-ok"></span>
         </button>
       );
         break;
