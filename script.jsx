@@ -30,6 +30,11 @@ var ButtonFrame = React.createClass({
       );
         break;
       case false:
+      button = (
+        <button className="btn btn-danger btn-lg">
+          <span className="glyphicon glyphicon-remove"></span>
+        </button>
+      );
         break;
       default:
       disabled = (this.props.selectedNumbers.length === 0);
