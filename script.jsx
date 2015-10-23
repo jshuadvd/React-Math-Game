@@ -142,7 +142,9 @@ checkAnswer: function() {
         <div className="clearfix">
           <StarsFrame numberOfStars={numberOfStars}/>
           <ButtonFrame selectedNumbers={selectedNumbers}
-                        correct={correct}/>
+                        correct={correct}
+                        checkAnswer={this.checkAnswer} />
+
           <AnswerFrame selectedNumbers={selectedNumbers}
                         unselectNumber={this.unselectNumber}/>
         </div>
