@@ -139,6 +139,7 @@ acceptAnswer: function() {
 },
   render: function(selectededNumber) {
     var selectededNumbers = this.state.selectedNumbers,
+        usedNumbers = this.state.usedNumbers,
         numberOfStars = this.state.numberOfStars,
         correct = this.state.correct;
     return (
