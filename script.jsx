@@ -122,7 +122,7 @@ unselectNumber: function(clickedNumber) {
 
   selectededNumbers.splice(indexOfNumber, 1);
 
-  this.setState({ selectededNumbers: selectededNumbers });
+  this.setState({ selectededNumbers: selectededNumbers, correct: null });
 },
 sumOfSelectedNUmbers: function() {
   return this.state.selectededNumbers.reduce(function(p, n) {
