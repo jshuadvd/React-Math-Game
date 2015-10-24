@@ -133,6 +133,9 @@ checkAnswer: function() {
   var correct = (this.state.numberOfStars === this.sumOfSelectedNUmbers());
   this.setState({ correct: correct });
 },
+acceptAnswer: function() {
+
+},
   render: function(selectededNumber) {
     var selectededNumbers = this.state.selectedNumbers,
         numberOfStars = this.state.numberOfStars,
