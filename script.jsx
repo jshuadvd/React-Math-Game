@@ -39,7 +39,8 @@ var ButtonFrame = React.createClass({
       default:
       disabled = (this.props.selectedNumbers.length === 0);
       button = (
-        <button className="btn btn-primary btn-lg" disabled={disabled}>
+        <button className="btn btn-primary btn-lg" disabled={disabled}
+                onClick={this.props.checkAnswer}>
           =
         </button>
       );
