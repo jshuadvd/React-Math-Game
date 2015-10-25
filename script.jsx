@@ -80,11 +80,11 @@ var AnswerFrame = React.createClass({
 
 var NumbersFrame = React.createClass({
   render: function() {
-
     var numbers = [], className,
     selectedNumber = this.props.selectedNumber,
     usedNumbers = this.props.usedNumbers,
     selectedNumbers = this.props.selectedNumbers;
+    
     for (var i = 0; i <= 9; i++) {
       className = "numbers selected " + (selectedNumbers.indexOf(i)>=0);
       className += " used-" + (selectedNumbers.indexOf(i)>=0);
