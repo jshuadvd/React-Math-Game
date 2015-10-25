@@ -86,6 +86,7 @@ var NumbersFrame = React.createClass({
     selectedNumbers = this.props.selectedNumbers;
     for (var i = 0; i <= 9; i++) {
       className = "numbers selected " + (selectedNumbers.indexOf(i)>=0);
+      className += " used-" + (selectedNumbers.indexOf(i)>=0);
       numbers.push(
         <div className="{className}" onClick={selectedNumber.bind(null, i)}>
           {i}
@@ -136,6 +137,7 @@ checkAnswer: function() {
 },
 acceptAnswer: function() {
   // usedNumbers...
+
 },
   render: function(selectededNumber) {
     var selectededNumbers = this.state.selectedNumbers,
