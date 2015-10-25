@@ -35,7 +35,7 @@
 }
 
 #numbers-frame .used-true {
-  background-color: #e8e8e8;
-  color: #ddd;
+  background-color: #aaddaa;
+  color: #99bb99;
   cursor: not-allowed;
 }
