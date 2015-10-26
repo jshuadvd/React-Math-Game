@@ -84,7 +84,7 @@ var NumbersFrame = React.createClass({
     selectedNumber = this.props.selectedNumber,
     usedNumbers = this.props.usedNumbers,
     selectedNumbers = this.props.selectedNumbers;
-    
+
     for (var i = 0; i <= 9; i++) {
       className = "numbers selected " + (selectedNumbers.indexOf(i)>=0);
       className += " used-" + (selectedNumbers.indexOf(i)>=0);
@@ -108,7 +108,7 @@ var Game = React.createClass({
   getInitialState: function() {
     return {  numberOfStars: Math.floor(Math.random() * 9) + 1,
               selectedNumbers: [],
-              usedNumbers: [4, 7],
+              usedNumbers: [],
               correct: null  };
   },
   selectNumber: function(clickedNumber) {
