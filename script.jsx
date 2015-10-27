@@ -140,6 +140,7 @@ acceptAnswer: function() {
   var usedNumbers = this.state.usedNumbers.concat(this.state.selectededNumbers);
   this.setState({
     selectededNumbers: [],
+    usedNumbers: usedNumbers,
   });
 },
   render: function(selectededNumber) {
