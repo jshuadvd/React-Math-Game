@@ -138,7 +138,9 @@ checkAnswer: function() {
 },
 acceptAnswer: function() {
   var usedNumbers = this.state.usedNumbers.concat(this.state.selectededNumbers);
-
+  this.setState({
+    selectededNumbers: [],
+  });
 },
   render: function(selectededNumber) {
     var selectededNumbers = this.state.selectedNumbers,
