@@ -141,6 +141,7 @@ acceptAnswer: function() {
   this.setState({
     selectededNumbers: [],
     usedNumbers: usedNumbers,
+    correct: null,
   });
 },
   render: function(selectededNumber) {
