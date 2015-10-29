@@ -142,6 +142,7 @@ acceptAnswer: function() {
     selectededNumbers: [],
     usedNumbers: usedNumbers,
     correct: null,
+    numberOfStars: Math.floor(Math.random() * 9) + 1
   });
 },
   render: function(selectededNumber) {
