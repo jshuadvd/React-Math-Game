@@ -158,7 +158,8 @@ acceptAnswer: function() {
           <StarsFrame numberOfStars={numberOfStars}/>
           <ButtonFrame selectedNumbers={selectedNumbers}
                         correct={correct}
-                        checkAnswer={this.checkAnswer} />
+                        checkAnswer={this.checkAnswer}
+                        acceptAnswer />
 
           <AnswerFrame selectedNumbers={selectedNumbers}
                         unselectNumber={this.unselectNumber}/>
