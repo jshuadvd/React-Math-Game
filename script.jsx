@@ -25,6 +25,7 @@ var ButtonFrame = React.createClass({
       case true:
       button = (
         <button className="btn btn-success btn-lg">
+          onClick={this.props.acceptAnswer}>
           <span className="glyphicon glyphicon-ok"></span>
         </button>
       );
