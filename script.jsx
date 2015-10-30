@@ -53,6 +53,7 @@ var ButtonFrame = React.createClass({
     return (
       <div id="button-frame">
         {button}
+        <button></button>
       </div>
     );
   }
