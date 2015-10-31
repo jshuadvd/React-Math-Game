@@ -54,7 +54,7 @@ var ButtonFrame = React.createClass({
       <div id="button-frame">
         {button}
         <button>
-          <span></span>
+          <span classNam="glyphicon glyphicon-refresh"></span>
 
         </button>
       </div>
