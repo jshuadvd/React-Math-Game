@@ -172,6 +172,7 @@ redraw: function() {
           <StarsFrame numberOfStars={numberOfStars}/>
           <ButtonFrame selectedNumbers={selectedNumbers}
                         correct={correct}
+                        redraws={redraws}
                         checkAnswer={this.checkAnswer}
                         acceptAnswer={this.acceptAnswer}
                         redraw={this.redraw}/>
