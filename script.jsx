@@ -162,6 +162,7 @@ redraw: function() {
     var selectededNumbers = this.state.selectedNumbers,
         usedNumbers = this.state.usedNumbers,
         numberOfStars = this.state.numberOfStars,
+        redraws = this.state.redraws,
         correct = this.state.correct;
     return (
       <div id="game">
