@@ -150,6 +150,11 @@ acceptAnswer: function() {
     numberOfStars: Math.floor(Math.random() * 9) + 1
   });
 },
+redraw: function() {
+  this.setState({
+
+  });
+},
   render: function(selectededNumber) {
     var selectededNumbers = this.state.selectedNumbers,
         usedNumbers = this.state.usedNumbers,
