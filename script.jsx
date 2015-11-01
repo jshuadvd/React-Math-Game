@@ -164,7 +164,8 @@ acceptAnswer: function() {
           <ButtonFrame selectedNumbers={selectedNumbers}
                         correct={correct}
                         checkAnswer={this.checkAnswer}
-                        acceptAnswer={this.acceptAnswer} />
+                        acceptAnswer={this.acceptAnswer}
+                        redraw={this.redraw}/>
 
           <AnswerFrame selectedNumbers={selectedNumbers}
                         unselectNumber={this.unselectNumber}/>
