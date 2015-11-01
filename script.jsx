@@ -154,6 +154,7 @@ redraw: function() {
   this.setState({
     numberOfStars: Math.floor(Math.random() * 9) + 1,
     correct: null,
+    selectedNumbers: []
   });
 },
   render: function(selectededNumber) {
