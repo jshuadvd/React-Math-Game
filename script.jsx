@@ -17,6 +17,7 @@ var StarsFrame = React.createClass({
   }
 });
 
+// Clean up all of this...
 var ButtonFrame = React.createClass({
   render: function() {
     var disabled, button, correct = this.props.correct;
