@@ -109,6 +109,8 @@ var NumbersFrame = React.createClass({
   }
 });
 
+
+// Make this more consice...
 var Game = React.createClass({
   getInitialState: function() {
     return {  numberOfStars: Math.floor(Math.random() * 9) + 1,
