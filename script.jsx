@@ -154,12 +154,14 @@ acceptAnswer: function() {
   });
 },
 redraw: function() {
+  if (this.state.redraws > 0) {
   this.setState({
     numberOfStars: Math.floor(Math.random() * 9) + 1,
     correct: null,
     selectedNumbers: [],
     redraws: this.state.redraws - 1
   });
+ }
 },
   render: function(selectededNumber) {
     var selectededNumbers = this.state.selectedNumbers,
