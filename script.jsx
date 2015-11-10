@@ -114,7 +114,7 @@ var NumbersFrame = React.createClass({
 // Make this more consice...
 var Game = React.createClass({
   getInitialState: function() {
-    return {  numberOfStars: ,
+    return {  numberOfStars: this.randomNumber,
               selectedNumbers: [],
               usedNumbers: [],
               redraws: 5,
