@@ -114,11 +114,14 @@ var NumbersFrame = React.createClass({
 // Make this more consice...
 var Game = React.createClass({
   getInitialState: function() {
-    return {  numberOfStars: Math.floor(Math.random() * 9) + 1,
+    return {  numberOfStars: ,
               selectedNumbers: [],
               usedNumbers: [],
               redraws: 5,
               correct: null  };
+  },
+  randomNumber: function() {
+    return Math.floor(Math.random() * 9) + 1
   },
   selectNumber: function(clickedNumber) {
     if (this.state.selectedNumbers.indexOf(clickedNumber) < 0) {
