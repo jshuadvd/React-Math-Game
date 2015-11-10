@@ -53,6 +53,7 @@ var ButtonFrame = React.createClass({
         {button}
         <br/><br />
         <button className="btn btn-warning bt-xs" onClick={this.props.redraw}>
+                disabled={this.props.redraws === 0}>
           <span classNam="glyphicon glyphicon-refresh"></span>
           &nbsp;
           {this.props.redraws}
