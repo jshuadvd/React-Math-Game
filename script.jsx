@@ -110,6 +110,10 @@ var NumbersFrame = React.createClass({
   }
 });
 
+var DoneFrame = React.createClass({
+  render: function() {}
+});
+
 
 // Make this more consice...
 var Game = React.createClass({
