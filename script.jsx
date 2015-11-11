@@ -118,7 +118,8 @@ var Game = React.createClass({
               selectedNumbers: [],
               usedNumbers: [],
               redraws: 5,
-              correct: null  };
+              correct: null
+            doneStatus: 'Game Over!' };
   },
   randomNumber: function() {
     return Math.floor(Math.random() * 9) + 1
