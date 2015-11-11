@@ -111,7 +111,13 @@ var NumbersFrame = React.createClass({
 });
 
 var DoneFrame = React.createClass({
-  render: function() {}
+  render: function() {
+    return (
+      <div className="well text-center">
+
+      </div>
+    )
+  }
 });
 
 
