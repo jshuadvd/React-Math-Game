@@ -204,7 +204,7 @@ redraw: function() {
         <NumbersFrame selectedNumbers={this.state.selectedNumbers}
                       selectedNumber={this.selectedNumber} />
 
-        <DoneFrame/>          
+                    <DoneFrame doneStatus={doneStatus}/>          
 
       </div>
     );
