@@ -121,7 +121,6 @@ var DoneFrame = React.createClass({
 });
 
 
-// Make this more consice...
 var Game = React.createClass({
   getInitialState: function() {
     return {  numberOfStars: this.randomNumber,
@@ -184,7 +183,17 @@ redraw: function() {
         numberOfStars = this.state.numberOfStars,
         redraws = this.state.redraws,
         correct = this.state.correct,
-        doneStatus = this.state.doneStatus;
+        doneStatus = this.state.doneStatus
+        bottomFrame;
+
+        if (doneStatus) {
+          bottomFrame = <DoneFrame doneStatus={doneStatus}/>;
+        }
+        else {
+          bottomFrame = <NumbersFrame selectedNumbers={selectedNumbers}
+                        usedNumbers={usedNumbers}
+                        selectNumber={this.selectNumber} />
+        }
     return (
       <div id="game">
         <h2>Play Nine</h2>
@@ -201,12 +210,7 @@ redraw: function() {
           <AnswerFrame selectedNumbers={selectedNumbers}
                         unselectNumber={this.unselectNumber}/>
         </div>
-
-        <NumbersFrame selectedNumbers={this.state.selectedNumbers}
-                      selectedNumber={this.selectedNumber} />
-
-                    <DoneFrame doneStatus={doneStatus}/>
-
+        {bottomFrame}
       </div>
     );
   }
