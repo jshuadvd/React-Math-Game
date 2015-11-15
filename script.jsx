@@ -183,7 +183,8 @@ redraw: function() {
         usedNumbers = this.state.usedNumbers,
         numberOfStars = this.state.numberOfStars,
         redraws = this.state.redraws,
-        correct = this.state.correct;
+        correct = this.state.correct,
+        doneStatus = this.state.doneStatus;
     return (
       <div id="game">
         <h2>Play Nine</h2>
@@ -204,7 +205,7 @@ redraw: function() {
         <NumbersFrame selectedNumbers={this.state.selectedNumbers}
                       selectedNumber={this.selectedNumber} />
 
-                    <DoneFrame doneStatus={doneStatus}/>          
+                    <DoneFrame doneStatus={doneStatus}/>
 
       </div>
     );
