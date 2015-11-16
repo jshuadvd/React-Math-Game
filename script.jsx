@@ -176,7 +176,9 @@ redraw: function() {
   });
  }
 },
+possibleSolutions: function() {
 
+},
 updateDoneStatus: function() {
   if (this.state.usedNumbers.length === 9) {
     this.setState({ doneStatus: 'Done. Nice!'});
