@@ -177,7 +177,9 @@ redraw: function() {
  }
 },
 possibleSolutions: function() {
-
+  var numberOfStars = this.state.numberOfStars,
+      possibleNumbers = [],
+      
 },
 updateDoneStatus: function() {
   if (this.state.usedNumbers.length === 9) {
