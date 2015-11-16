@@ -179,11 +179,11 @@ redraw: function() {
 
 updateDoneStatus: function() {
   if (this.state.usedNumbers.length === 9) {
-    this.setState({ doneStatus: 'Done. Nice!'})
+    this.setState({ doneStatus: 'Done. Nice!'});
     return;
   }
   if (!this.possibleSolutions()) {
-    
+    this.setState({ doneStatus: 'Game Over!'});
   }
 },
   render: function(selectededNumber) {
