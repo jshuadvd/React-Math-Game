@@ -179,7 +179,8 @@ redraw: function() {
 
 updateDoneStatus: function() {
   if (this.state.usedNumbers.length === 9) {
-    this.setState({ doneStatus: ''})
+    this.setState({ doneStatus: 'Done. Nice!'})
+    return;
   }
 },
   render: function(selectededNumber) {
