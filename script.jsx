@@ -17,7 +17,6 @@ var StarsFrame = React.createClass({
   }
 });
 
-// Clean up all of this...
 var ButtonFrame = React.createClass({
   render: function() {
     var disabled, button, correct = this.props.correct;
@@ -201,14 +200,14 @@ redraw: function() {
         <div className="clearfix">
           <StarsFrame numberOfStars={numberOfStars}/>
           <ButtonFrame selectedNumbers={selectedNumbers}
-                        correct={correct}
-                        redraws={redraws}
-                        checkAnswer={this.checkAnswer}
-                        acceptAnswer={this.acceptAnswer}
-                        redraw={this.redraw}/>
+                       correct={correct}
+                       redraws={redraws}
+                       checkAnswer={this.checkAnswer}
+                       acceptAnswer={this.acceptAnswer}
+                       redraw={this.redraw}/>
 
           <AnswerFrame selectedNumbers={selectedNumbers}
-                        unselectNumber={this.unselectNumber}/>
+                       unselectNumber={this.unselectNumber}/>
         </div>
         {bottomFrame}
       </div>
