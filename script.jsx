@@ -176,6 +176,12 @@ redraw: function() {
   });
  }
 },
+
+updateDoneStatus: function() {
+  if (this.state.usedNumbers.length === 9) {
+    this.setState({ doneStatus: ''})
+  }
+},
   render: function(selectededNumber) {
     var selectededNumbers = this.state.selectedNumbers,
         usedNumbers = this.state.usedNumbers,
