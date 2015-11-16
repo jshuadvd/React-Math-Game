@@ -182,6 +182,9 @@ updateDoneStatus: function() {
     this.setState({ doneStatus: 'Done. Nice!'})
     return;
   }
+  if (!this.possibleSolutions()) {
+    
+  }
 },
   render: function(selectededNumber) {
     var selectededNumbers = this.state.selectedNumbers,
