@@ -182,7 +182,7 @@ updateDoneStatus: function() {
     this.setState({ doneStatus: 'Done. Nice!'});
     return;
   }
-  if (!this.possibleSolutions()) {
+  if (this.state.redraws === 0 && !this.possibleSolutions()) {
     this.setState({ doneStatus: 'Game Over!'});
   }
 },
