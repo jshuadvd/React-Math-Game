@@ -179,7 +179,7 @@ redraw: function() {
 possibleSolutions: function() {
   var numberOfStars = this.state.numberOfStars,
       possibleNumbers = [],
-      
+      usedNumbers = this.state.redraws - 1
 },
 updateDoneStatus: function() {
   if (this.state.usedNumbers.length === 9) {
