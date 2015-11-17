@@ -184,7 +184,7 @@ possibleSolutions: function() {
 
 for (var i = 1; i <= 9; i++) {
   if (usedNumbers.indexOf(i) < 0) {
-
+    possibleNumbers.push(i);
   }
 }
 updateDoneStatus: function() {
