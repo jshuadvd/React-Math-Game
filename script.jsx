@@ -181,6 +181,12 @@ possibleSolutions: function() {
       possibleNumbers = [],
       usedNumbers = this.state.redraws - 1
 },
+
+for (var i = 1; i <= 9; i++) {
+  if (usedNumbers.indexOf(i) < 0) {
+
+  }
+}
 updateDoneStatus: function() {
   if (this.state.usedNumbers.length === 9) {
     this.setState({ doneStatus: 'Done. Nice!'});
