@@ -127,7 +127,7 @@ var Game = React.createClass({
               usedNumbers: [],
               redraws: 5,
               correct: null
-            doneStatus: null };
+              doneStatus: null };
   },
   randomNumber: function() {
     return Math.floor(Math.random() * 9) + 1
@@ -140,62 +140,62 @@ var Game = React.createClass({
     );
   }
 },
-unselectNumber: function(clickedNumber) {
-  var selectedNumbers = this.state.selectedNumbers,
-  indexOfNumber = selectededNumbers.indexOf(clickedNumber);
+  unselectNumber: function(clickedNumber) {
+    var selectedNumbers = this.state.selectedNumbers,
+    indexOfNumber = selectededNumbers.indexOf(clickedNumber);
 
-  selectededNumbers.splice(indexOfNumber, 1);
+    selectededNumbers.splice(indexOfNumber, 1);
 
-  this.setState({ selectededNumbers: selectededNumbers, correct: null });
-},
-sumOfSelectedNUmbers: function() {
-  return this.state.selectededNumbers.reduce(function(p, n) {
-    return p + n;
-  }, 0);
-},
-checkAnswer: function() {
-  var correct = (this.state.numberOfStars === this.sumOfSelectedNUmbers());
-  this.setState({ correct: correct });
-},
-acceptAnswer: function() {
-  var usedNumbers = this.state.usedNumbers.concat(this.state.selectededNumbers);
-  this.setState({
-    selectededNumbers: [],
-    usedNumbers: usedNumbers,
-    correct: null,
-    numberOfStars: Math.floor(Math.random() * 9) + 1
-  });
-},
-redraw: function() {
-  if (this.state.redraws > 0) {
-  this.setState({
-    numberOfStars: Math.floor(Math.random() * 9) + 1,
-    correct: null,
-    selectedNumbers: [],
-    redraws: this.state.redraws - 1
-  });
- }
-},
-possibleSolutions: function() {
-  var numberOfStars = this.state.numberOfStars,
-      possibleNumbers = [],
-      usedNumbers = this.state.redraws - 1
-},
+    this.setState({ selectededNumbers: selectededNumbers, correct: null });
+  },
+  sumOfSelectedNUmbers: function() {
+    return this.state.selectededNumbers.reduce(function(p, n) {
+      return p + n;
+    }, 0);
+  },
+  checkAnswer: function() {
+    var correct = (this.state.numberOfStars === this.sumOfSelectedNUmbers());
+    this.setState({ correct: correct });
+  },
+  acceptAnswer: function() {
+    var usedNumbers = this.state.usedNumbers.concat(this.state.selectededNumbers);
+    this.setState({
+      selectededNumbers: [],
+      usedNumbers: usedNumbers,
+      correct: null,
+      numberOfStars: Math.floor(Math.random() * 9) + 1
+    });
+  },
+  redraw: function() {
+    if (this.state.redraws > 0) {
+    this.setState({
+      numberOfStars: Math.floor(Math.random() * 9) + 1,
+      correct: null,
+      selectedNumbers: [],
+      redraws: this.state.redraws - 1
+    });
+   }
+  },
+  possibleSolutions: function() {
+    var numberOfStars = this.state.numberOfStars,
+        possibleNumbers = [],
+        usedNumbers = this.state.redraws - 1
+  },
 
-for (var i = 1; i <= 9; i++) {
-  if (usedNumbers.indexOf(i) < 0) {
-    possibleNumbers.push(i);
+  for (var i = 1; i <= 9; i++) {
+    if (usedNumbers.indexOf(i) < 0) {
+      possibleNumbers.push(i);
+    }
   }
-}
-updateDoneStatus: function() {
-  if (this.state.usedNumbers.length === 9) {
-    this.setState({ doneStatus: 'Done. Nice!'});
-    return;
-  }
-  if (this.state.redraws === 0 && !this.possibleSolutions()) {
-    this.setState({ doneStatus: 'Game Over!'});
-  }
-},
+  updateDoneStatus: function() {
+    if (this.state.usedNumbers.length === 9) {
+      this.setState({ doneStatus: 'Done. Nice!'});
+      return;
+    }
+    if (this.state.redraws === 0 && !this.possibleSolutions()) {
+      this.setState({ doneStatus: 'Game Over!'});
+    }
+  },
   render: function(selectededNumber) {
     var selectededNumbers = this.state.selectedNumbers,
         usedNumbers = this.state.usedNumbers,
