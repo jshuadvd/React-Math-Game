@@ -180,13 +180,15 @@ var Game = React.createClass({
     var numberOfStars = this.state.numberOfStars,
         possibleNumbers = [],
         usedNumbers = this.state.redraws - 1
-  },
 
   for (var i = 1; i <= 9; i++) {
     if (usedNumbers.indexOf(i) < 0) {
       possibleNumbers.push(i);
     }
-  }
+   }
+    return possibleCombinationSum(possibleNumbers, numberOfStars)
+
+  },
   updateDoneStatus: function() {
     if (this.state.usedNumbers.length === 9) {
       this.setState({ doneStatus: 'Done. Nice!'});
