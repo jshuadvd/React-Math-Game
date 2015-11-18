@@ -1,3 +1,13 @@
+var possibleCombinationSum = function(arr, n) {
+  if (arr.indexOf(n) >= 0) { return true; }
+  if (arr[0] > n) { return false; }
+  if (arr[arr.length - 1] > n) {
+    arr.pop();
+    return possibleCombinationSum(arr, n);
+  }
+
+
+
 var StarsFrame = React.createClass({
   render: function() {
     var stars = [];
@@ -186,7 +196,8 @@ var Game = React.createClass({
       possibleNumbers.push(i);
     }
    }
-    return possibleCombinationSum(possibleNumbers, numberOfStars)
+    return possibleCombinationSum(possibleNumbers, numberOfStars);
+
 
   },
   updateDoneStatus: function() {
