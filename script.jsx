@@ -128,6 +128,8 @@ var NumbersFrame = React.createClass({
   }
 });
 
+// Finish up this component
+
 var DoneFrame = React.createClass({
   render: function() {
     return (
