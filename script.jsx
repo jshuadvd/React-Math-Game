@@ -196,6 +196,8 @@ var Game = React.createClass({
       correct: null,
       selectedNumbers: [],
       redraws: this.state.redraws - 1
+    }, function() {
+      this.updateDoneStatus();
     });
    }
   },
