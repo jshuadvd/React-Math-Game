@@ -201,7 +201,7 @@ var Game = React.createClass({
     });
    }
   },
-  possibleSolutions: function() {
+  possibleSolution: function() {
     var numberOfStars = this.state.numberOfStars,
         possibleNumbers = [],
         usedNumbers = this.state.redraws - 1
@@ -220,7 +220,7 @@ var Game = React.createClass({
       this.setState({ doneStatus: 'Done. Nice!'});
       return;
     }
-    if (this.state.redraws === 0 && !this.possibleSolutions()) {
+    if (this.state.redraws === 0 && !this.possibleSolution()) {
       this.setState({ doneStatus: 'Game Over!'});
     }
   },
