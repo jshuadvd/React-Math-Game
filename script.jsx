@@ -185,6 +185,8 @@ var Game = React.createClass({
       usedNumbers: usedNumbers,
       correct: null,
       numberOfStars: Math.floor(Math.random() * 9) + 1
+    }, function() {
+      this.updateDoneStatus();
     });
   },
   redraw: function() {
