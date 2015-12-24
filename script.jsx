@@ -135,7 +135,7 @@ var DoneFrame = React.createClass({
     return (
       <div className="well text-center">
         <h2>{this.props.doneStatus}</h2>
-        <button></button>
+        <button>Play Again</button>
       </div>
     )
   }
