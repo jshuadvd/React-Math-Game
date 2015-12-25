@@ -152,7 +152,7 @@ var Game = React.createClass({
               doneStatus: 'Just a test' };
   },
   resetGame: function() {
-    this.replaceState();
+    this.replaceState(this.getInitialState());
   },
   randomNumber: function() {
     return Math.floor(Math.random() * 9) + 1
