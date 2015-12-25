@@ -239,7 +239,7 @@ var Game = React.createClass({
 
         if (doneStatus) {
           bottomFrame = <DoneFrame doneStatus={doneStatus}
-          resetGame/>;
+          resetGame={this.resetGame}/>;
         }
         else {
           bottomFrame = <NumbersFrame selectedNumbers={selectedNumbers}
