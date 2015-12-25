@@ -151,6 +151,9 @@ var Game = React.createClass({
               correct: null
               doneStatus: 'Just a test' };
   },
+  resetGame: function() {
+    
+  },
   randomNumber: function() {
     return Math.floor(Math.random() * 9) + 1
   },
