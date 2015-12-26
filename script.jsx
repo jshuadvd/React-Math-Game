@@ -152,7 +152,7 @@ var Game = React.createClass({
               usedNumbers: [],
               redraws: 5,
               correct: null
-              doneStatus: 'Just a test' };
+              doneStatus: null };
   },
   resetGame: function() {
     this.replaceState(this.getInitialState());
