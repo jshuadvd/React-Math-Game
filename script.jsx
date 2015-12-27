@@ -271,4 +271,6 @@ var Game = React.createClass({
   }
 });
 
+// Have to get this whole thing to work
+
 React.render(<Game/>, document.getElementById('container'));
