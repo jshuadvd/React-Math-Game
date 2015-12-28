@@ -272,5 +272,6 @@ var Game = React.createClass({
 });
 
 // Have to get this whole thing to work
+// getting weird errors in console
 
 React.render(<Game/>, document.getElementById('container'));
