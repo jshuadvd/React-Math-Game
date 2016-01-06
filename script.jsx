@@ -36,6 +36,7 @@ var StarsFrame = React.createClass({
   }
 });
 
+// Button Area
 var ButtonFrame = React.createClass({
   render: function() {
     var disabled, button, correct = this.props.correct;
