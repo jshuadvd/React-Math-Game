@@ -82,6 +82,7 @@ var ButtonFrame = React.createClass({
   }
 });
 
+// Answer Frame
 var AnswerFrame = React.createClass({
   render: function() {
     var props = this.props;
