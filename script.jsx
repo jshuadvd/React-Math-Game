@@ -146,7 +146,7 @@ var DoneFrame = React.createClass({
   }
 });
 
-
+// Game Component
 var Game = React.createClass({
   getInitialState: function() {
     return {  numberOfStars: this.randomNumber,
